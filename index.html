@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为HTML5 -->
+<html lang="zh-CN">
+<!-- 定义HTML文档，设置语言为中文 -->
+<head>
+  <!-- 头部区域，包含元数据和资源引用 -->
+  <meta charset="UTF-8">
+  <!-- 设置字符编码为UTF-8，支持中文等多语言 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 使网站在移动设备上正确显示 -->
+  <title>简洁导航</title>
+  <!-- 浏览器标签页显示的标题 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入外部CSS样式文件 -->
+</head>
+<body>
+  <!-- 页面主体内容开始 -->
+  <header class="header">
+    <!-- 网站头部区域 -->
+    <h1 class="site-title">简洁导航</h1>
+    <!-- 网站主标题 -->
+    <p class="site-description">精选优质网站，一键直达</p>
+    <!-- 网站描述 -->
+    <div class="search-box">
+      <!-- 搜索功能区域 -->
+      <input type="text" id="searchInput" placeholder="搜索网站...">
+      <!-- 搜索输入框 -->
+      <button id="searchBtn">搜索</button>
+      <!-- 搜索按钮 -->
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- 主要内容容器 -->
+    <nav class="categories">
+      <!-- 导航分类区域 -->
+      <ul>
+        <!-- 无序列表用于分类 -->
+        <li><a href="#games" class="active">游戏类</a></li>
+        <!-- 游戏分类链接，初始为激活状态 -->
+        <li><a href="#software">软件下载类</a></li>
+        <!-- 软件下载分类链接 -->
+        <li><a href="#ai">AI类</a></li>
+        <!-- AI分类链接 -->
+      </ul>
+    </nav>
+
+    <main class="content">
+      <!-- 主要内容区域 -->
+      
+      <!-- 游戏类区域 -->
+      <section id="games" class="category-section active">
+        <!-- id="games"用于链接跳转，class="active"表示当前显示 -->
+        <h2>🎮 游戏类</h2>
+        <!-- 分类标题，添加了游戏表情符号 -->
+        
+        <div class="links-grid">
+          <!-- 链接网格容器 -->
+          
+          <!-- 单个链接卡片 -->
+          <div class="link-card">
+            <a href="https://www.steam.com" target="_blank">
+              <!-- target="_blank"表示在新标签页打开 -->
+              <div class="link-icon">🎮</div>
+              <!-- 链接图标 -->
+              <h3>Steam</h3>
+              <!-- 链接标题 -->
+              <p>全球最大的游戏平台，提供各种游戏下载和社区功能</p>
+              <!-- 链接描述 -->
+            </a>
+          </div>
+          
+          <!-- 另一个链接卡片 -->
+          <div class="link-card">
+            <a href="https://www.epicgames.com" target="_blank">
+              <div class="link-icon">🏆</div>
+              <h3>Epic Games Store</h3>
+              <p>知名游戏平台，每周提供免费游戏</p>
+            </a>
+          </div>
+          
+          <!-- 第三个链接卡片 -->
+          <div class="link-card">
+            <a href="https://www.nintendo.com" target="_blank">
+              <div class="link-icon">🕹️</div>
+              <h3>Nintendo</h3>
+              <p>任天堂官方网站，提供Switch游戏和资讯</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 软件下载类区域 -->
+      <section id="software" class="category-section">
+        <h2>📦 软件下载类</h2>
+        
+        <div class="links-grid">
+          <div class="link-card">
+            <a href="https://www.microsoft.com" target="_blank">
+              <div class="link-icon">💻</div>
+              <h3>Microsoft</h3>
+              <p>微软官网，提供Windows系统和Office软件</p>
+            </a>
+          </div>
+          
+          <div class="link-card">
+            <a href="https://www.adobe.com" target="_blank">
+              <div class="link-icon">🎨</div>
+              <h3>Adobe</h3>
+              <p>专业设计软件下载，包括Photoshop、Illustrator等</p>
+            </a>
+          </div>
+          
+          <div class="link-card">
+            <a href="https://www.7-zip.org" target="_blank">
+              <div class="link-icon">📂</div>
+              <h3>7-Zip</h3>
+              <p>开源压缩解压软件，支持多种格式</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- AI类区域 -->
+      <section id="ai" class="category-section">
+        <h2>🤖 AI类</h2>
+        
+        <div class="links-grid">
+          <div class="link-card">
+            <a href="https://chat.openai.com" target="_blank">
+              <div class="link-icon">💬</div>
+              <h3>ChatGPT</h3>
+              <p>OpenAI开发的AI聊天机器人，提供强大的对话能力</p>
+            </a>
+          </div>
+          
+          <div class="link-card">
+            <a href="https://www.midjourney.com" target="_blank">
+              <div class="link-icon">🎨</div>
+              <h3>MidJourney</h3>
+              <p>AI图像生成工具，通过文字描述创建精美图片</p>
+            </a>
+          </div>
+          
+          <div class="link-card">
+            <a href="https://qwenlm.github.io" target="_blank">
+              <div class="link-icon">🔍</div>
+              <h3>通义千问</h3>
+              <p>阿里云开发的大型语言模型，提供智能问答服务</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <!-- 页脚区域 -->
+    <p>&copy; 2023 简洁导航 | 一个简单实用的网站导航</p>
+    <!-- 版权信息 -->
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- 引入外部JavaScript文件 -->
+</body>
+</html>
